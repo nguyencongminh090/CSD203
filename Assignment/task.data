@@ -1,0 +1,5 @@
+pid010, 12.5, 5, check work, do it       , backup sys   , transfer data
+pid012, 22.5, 4, check work, do          , retrieve data, transfer data, hashing password
+pid038, 22.5, 2
+pid045, 22.5, 5, check work, clean memory, load data
+pid075, 25.5, 1, extract data
