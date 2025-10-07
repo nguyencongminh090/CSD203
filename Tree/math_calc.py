@@ -167,7 +167,7 @@ m_dict    = {
 d_dict = {value: key for key, value in m_dict.items()}
 
 
-inp       = '(1.5 + 2.67) - (3 + 4.25) * 5 / 7 + 6 * 8'
+inp       = input('Math Equation: ')
 postfix   = generate_postfix(inp)
 out       = ' '.join([i if i not in d_dict else d_dict[i] for i in postfix])
 output    = calc(postfix)

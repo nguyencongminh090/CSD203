@@ -288,9 +288,9 @@ class ProcessManagementSystem:
 
     def processing(self):
         while not self.__priority_queue_thread_waiting.is_empty():
-            proc_pid = self.__priority_queue_thread_waiting.dequeue()
-            self.__call_stack.push(proc_pid)
-            while msg_node:=self.__message_list.get_pid_message(proc_pid.thread.pid):
+            thread = self.__priority_queue_thread_waiting.dequeue()
+            self.__call_stack.push(thread)
+            while msg_node:=self.__message_list.get_pid_message(thread.thread.pid):
                 self.__call_stack.push(msg_node)
 
     def calling(self):
